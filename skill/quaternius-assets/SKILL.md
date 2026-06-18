@@ -1,28 +1,21 @@
 ---
 name: quaternius-assets
 description: Search and inspect Quaternius CC0 game asset packs.
+license: MIT
+compatibility: "dcc-mcp-core 0.18+"
 metadata:
   dcc-mcp:
     version: v0.1.0
     dcc: python
-    display_name: Quaternius Assets
-    group: asset.download.cc0
-    default_icon: package
-    affinity: any
-    marketplace: dcc-asset-quaternius
+    layer: domain
+    tags:
+      - asset
+      - quaternius
+      - cc0
+      - game-assets
+      - 3d-models
+    search-hint: "quaternius, cc0 game assets, game asset pack, platformer kit, low poly models, official download page"
     tools: tools.yaml
-    execution: sync
-    permissions:
-      - network
-    examples:
-      - "Search Quaternius for platformer packs"
-      - "Inspect a Quaternius pack license and official download page"
-    contact:
-      name: dcc-mcp team
-      url: https://github.com/dcc-mcp/dcc-asset-quaternius
-    install:
-      add_source: "dcc-mcp-cli marketplace add dcc-mcp/dcc-asset-quaternius"
-      then_install: "dcc-mcp-cli marketplace install dcc-asset-quaternius"
 ---
 
 # Quaternius Assets
