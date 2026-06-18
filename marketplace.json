@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "entries": [
+    {
+      "name": "dcc-asset-quaternius",
+      "description": "Search and inspect CC0 Quaternius game asset packs",
+      "dcc": ["maya", "blender", "houdini", "3dsmax"],
+      "tags": ["asset", "quaternius", "cc0", "game-assets"],
+      "version": "0.1.0",
+      "install": {
+        "type": "git",
+        "url": "https://github.com/dcc-mcp/dcc-asset-quaternius",
+        "ref": "main"
+      }
+    }
+  ]
+}
+
