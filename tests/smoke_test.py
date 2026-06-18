@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import importlib.util
 import os
-import sys
 from pathlib import Path
 
 
@@ -12,7 +11,6 @@ SCRIPTS = SKILL / "scripts"
 
 
 def load(name: str):
-    sys.path.insert(0, str(SCRIPTS))
     spec = importlib.util.spec_from_file_location(name, SCRIPTS / f"{name}.py")
     module = importlib.util.module_from_spec(spec)
     assert spec and spec.loader

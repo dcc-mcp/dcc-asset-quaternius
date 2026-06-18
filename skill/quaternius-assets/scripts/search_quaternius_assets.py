@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
 from typing import Any
 
 from dcc_mcp_core.skill import skill_entry, skill_exception, skill_success
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _quaternius import search
 
 
