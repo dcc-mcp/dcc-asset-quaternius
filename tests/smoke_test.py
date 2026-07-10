@@ -25,6 +25,22 @@ def validate_skill() -> None:
     assert not report.has_errors, report
 
 
+def descriptor_smoke() -> None:
+    result = load("describe_quaternius_asset").asset_descriptor(
+        {
+            "title": "Ultimate Platformer Pack",
+            "url": "https://quaternius.com/packs/ultimateplatformer.html",
+            "official_download_url": "https://quaternius.com/packs/ultimateplatformer.html",
+            "usage_notice": "Quaternius pages mark these packs as CC0.",
+            "license_name": "CC0 1.0 Universal",
+        },
+        "C:/tmp/ultimateplatformer.zip",
+    )
+    assert result["variants"][0]["local_path"] == "C:/tmp/ultimateplatformer.zip"
+    assert result["attribution"]["source_url"].endswith("ultimateplatformer.html")
+    assert result["attribution"]["license_text"].startswith("Quaternius pages")
+
+
 def live_smoke() -> None:
     if os.environ.get("RUN_LIVE_API_SMOKE") != "true":
         print("skip live Quaternius smoke")
@@ -36,6 +52,7 @@ def live_smoke() -> None:
 
 def main() -> None:
     validate_skill()
+    descriptor_smoke()
     live_smoke()
 
 
