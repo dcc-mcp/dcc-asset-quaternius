@@ -1,6 +1,6 @@
 # DCC-MCP Quaternius Assets
 
-![Workflow showcase](docs/workflow-showcase.png)
+![Workflow showcase](docs/images/dcc-asset-quaternius-showcase.webp)
 
 Search and inspect free Quaternius asset packs.
 
