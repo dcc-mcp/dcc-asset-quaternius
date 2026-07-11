@@ -1,5 +1,7 @@
 # DCC-MCP Quaternius Assets
 
+![Workflow showcase](docs/workflow-showcase.png)
+
 Search and inspect free Quaternius asset packs.
 
 ## Install
